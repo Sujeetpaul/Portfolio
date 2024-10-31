@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         html{
             scroll-behavior: smooth;
@@ -25,7 +26,7 @@
             font-size: large;
             
         }
-        div a:hover{
+        .navbar a:hover{
             background-color: #39FF14;
             color:black;
         }
@@ -81,7 +82,22 @@
             padding-top:100px;
             
         }
-       #section4{
+        #skills{
+            display:flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 60px 20px;
+            
+}
+
+
+ #skills p {
+    flex:1;
+    color: #666;
+   
+}
+
+       #section5{
         background-color: black;
         color:white;
         margin-bottom: 0;
@@ -89,9 +105,12 @@
         padding-top: 30px;
         display: block;
        }
-       #section4 div{
+       #section5 div{
         padding-bottom: 20px;
         border-bottom:1px solid white;
+       }
+       .container{
+            
        }
     </style>
 </head>
@@ -99,7 +118,8 @@
     <div class="navbar">
         <a href="#section1" id="3">Resume</a>
         <a href="Work.html" id="3">work</a>
-        <a href="#section2" id="3">About</a>        
+        <a href="#section2" id="3">About</a>
+        <a href="#skills" id="3">Skills</a>        
     </div>
     <section id="section1">
         <img src="java.png">
@@ -113,21 +133,41 @@
         <img src="developer.jpg">
         <div>
             <h1 style="font-size: 50px;">About</h1>
-            <p style="font-size: 20px; padding-left: 40px; padding-right: 70px;">Hi, I'm Sujeet Paul—a tech enthusiast and aspiring software engineer. I am 19 years old.  I am an undergraduate, currently persuing B.tech in computer science and engineering from Indore Institute of science and technolgy. The world of technology has always fascinated me. It drove me to dive deeper in the field of computer science.In the future, I aspire to dive deeper into backend development, explore AI/ML technologies, and work on projects that make a real difference.</p>
+            <p style="font-size: 20px; padding-left: 40px; padding-right: 70px;"> Hi, I'm Sujeet Paul—a tech enthusiast and aspiring software engineer. I am 19 years old. I am an undergraduate, currently persuing B.tech in computer science and engineering from Indore Institute of science and technolgy. The world of technology has always fascinated me. It drove me to dive deeper in the field of computer science.  In the future, I aspire to dive deeper into backend development, explore AI/ML technologies, and work on projects that make a real difference.</p>
         </div>
     </section>
-    <section id="section3">
-        <img src="badminton.webp">
-        <div>
-            <h1 style="font-size: 30px;">Apart from academics,</h1>
-            <p style="font-size: 20px;">Badminton has been my most favorite sport, one that constantly challenges me and brings out my best. Having played at the district level, I know firsthand the thrill of each rally and the need for lightning-fast reflexes, making every match intense and rewarding. It’s a sport that sharpens my focus, builds my endurance, and keeps me mentally strong, even when the competition gets tough. The strategic thinking and agility required make badminton a true test of both mind and body—and that’s what I love most about it.</p>
+    <div id="section3-wrapper">
+        <section id="section3">
+            <img src="badminton.webp">
+            <div>
+                <h1 style="font-size: 30px;">Apart from academics,</h1>
+                <p style="font-size: 20px;">
+                    Badminton has been my most favorite sport, one that constantly challenges me and brings out my best. Having played at the district level, I know firsthand the thrill of each rally and the need for lightning-fast reflexes, making every match intense and rewarding. It’s a sport that sharpens my focus, builds my endurance, and keeps me mentally strong, even when the competition gets tough. The strategic thinking and agility required make badminton a true test of both mind and body—and that’s what I love most about it.
+                </p>
+            </div>
+        </section>
+    </div>
+    
+        <section id="skills">
+            <h1 style="text-align: center; font-size: 50px;">Skills</h1>
+            <div>
+                <p style="padding-left:30px; font-size: 20px;">
+                Java, Spring Boot, Spring Security, HTML, CSS, JavaScript, Python, SQL, Git
+            </p>
         </div>
+        </section>
+
+        
     </section>
-    <section id="section4">
-        <div>
+    <section id="section5">
         <h5>Contact me!</h5>
-        <h1>SUJEET.PAULCSE@INDOREINSTITUTE.COM</h1>
-        </div>
+        <div class="container">
+        
+        <a href="https://mail.google.com/" target="_blank"><i style="font-size: 50px;" class="fa-regular fa-envelope"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"> <i style="font-size: 50px;" class="fa-brands fa-instagram"></i></a>
+        <a href="https://in.linkedin.com/" target="_blank"> <i style="font-size: 50px;" class="fa-brands fa-linkedin"></i></a>       
+        <a href="https://github.com/" target="_blank"> <i style="font-size: 50px;" class="fa-brands fa-github"></i> </a>     
+     </div>
         <p class="copyright">© 2024 Sujeet</p>
 
     </section>
